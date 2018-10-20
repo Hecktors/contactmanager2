@@ -40,7 +40,7 @@ class Contact extends Component {
 
           return (
             <div className="card card-body mb-3 bg-light">
-              <h3 className="font-weight-bold d-flex">{name}&nbsp;
+              <h3 className="d-flex">{name}&nbsp;
                 <i onClick={() => this.setState({ show: !this.state.show })} className={icon}></i>
                 <Link className="ml-auto" to={`/contact/edit/${id}`} >
                   <i className="d-inline fas fa-pencil-alt mr-3" style={{color:'#000'}}></i>
